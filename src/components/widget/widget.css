@@ -1,0 +1,60 @@
+.my-chat-widget {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    max-height: 500px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+  }
+  
+  .my-chat-widget.closed {
+    width: auto;
+    height: auto;
+  }
+  
+  .my-chat-widget header {
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .my-chat-widget .chat-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .my-chat-widget .messages {
+    flex-grow: 1;
+    overflow: auto;
+    padding: 10px;
+  }
+  
+  .my-chat-widget .message {
+    margin-bottom: 10px;
+  }
+  
+  .my-chat-widget .message.user {
+    align-self: flex-end;
+    background: #eee;
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+  
+  .my-chat-widget form {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #000;
+  }
+  
+  .my-chat-widget form input {
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+  
